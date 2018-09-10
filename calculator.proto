@@ -17,5 +17,5 @@ message AddRequest {
 
 // The response message containing the result
 message AddReply {
-  string result = 1;
+  int64 result = 1;
 }

@@ -14,7 +14,7 @@ _ONE_DAY_IN_SECONDS = 60 * 60 * 24
 class Addition(calculator_pb2_grpc.AdditionServicer):
 
     def AddNumbers(self, request, context):
-        return calculator_pb2.AddReply(result=str( request.num1 + request.num2))
+        return calculator_pb2.AddReply(result=request.num1 + request.num2)
         
     
    

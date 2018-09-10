@@ -18,7 +18,7 @@ def run():
     stub = calculator_pb2_grpc.AdditionStub(channel)
     print('Add request sent to server..')
     response = stub.AddNumbers(calculator_pb2.AddRequest(num1=int(n1),num2=int(n2)))
-    print("Addition client received sum: " + response.result)
+    print("Addition client received sum: " + str(response.result))
 
 
 if __name__ == '__main__':
